@@ -1,0 +1,26 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "sharpness", email = "zasufzasufov@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "aerich>=0.10.1",
+    "aiogram>=3.31.0",
+    "asyncpg>=0.31.0",
+    "fastapi>=0.141.1",
+    "pydantic-settings>=2.15.0",
+    "tomlkit>=0.15.1",
+    "tortoise-orm>=1.1.8",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+backend = "backend:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"
