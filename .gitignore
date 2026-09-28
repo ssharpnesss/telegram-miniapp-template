@@ -9,6 +9,7 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 .ruff_cache/
+src/backend/uv.lock
 
 # Node.js / frontend build output
 node_modules/
