@@ -1,23 +1,23 @@
-# Telegram Mini App Template
+# Шаблон Telegram Mini App
 
-Starter repository for a Telegram Mini App with a React + TypeScript frontend and a Python backend using FastAPI, aiogram, and PostgreSQL.
+Стартовый шаблон Telegram Mini App: фронтенд на React и TypeScript, бэкенд на Python с FastAPI, aiogram и PostgreSQL.
 
-## What's included
+## Что входит в шаблон
 
-- `src/client/app` — Vite, React, and TypeScript app.
-- `src/backend` — FastAPI app, Telegram bot, and PostgreSQL integration.
-- `src/backend/.env.example` — names of the backend settings to configure.
+- `src/client/app` — приложение на Vite, React и TypeScript.
+- `src/backend` — приложение на FastAPI, Telegram-бот и интеграция с PostgreSQL.
+- `src/backend/.env.example` — пример настроек бэкенда.
 
-## Requirements
+## Требования
 
-- Node.js 20.19+ or 22.12+ and npm.
-- Python 3.12+ and [uv](https://docs.astral.sh/uv/).
-- A PostgreSQL database and a Telegram bot token from [@BotFather](https://t.me/BotFather).
+- Node.js 20.19+ или 22.12+ и npm.
+- Python 3.12+ и [uv](https://docs.astral.sh/uv/).
+- База данных PostgreSQL и токен Telegram-бота, созданного через [@BotFather](https://t.me/BotFather).
 
-## Run locally
+## Локальный запуск
 
-1. Copy `src/backend/.env.example` to `src/backend/.env` and fill in your local values. Keep `.env` private.
-2. Start the backend:
+1. Скопируйте `src/backend/.env.example` в `src/backend/.env` и укажите свои настройки. Не публикуйте файл `.env`.
+2. Запустите бэкенд:
 
    ```powershell
    cd src/backend
@@ -25,7 +25,7 @@ Starter repository for a Telegram Mini App with a React + TypeScript frontend an
    uv run python -m src
    ```
 
-3. In another terminal, start the frontend:
+3. В другом терминале запустите фронтенд:
 
    ```powershell
    cd src/client/app
@@ -33,12 +33,12 @@ Starter repository for a Telegram Mini App with a React + TypeScript frontend an
    npm run dev
    ```
 
-The backend registers a Telegram webhook during startup, so `API_URL` must point to a publicly reachable HTTPS endpoint. For local development, expose the backend through a tunneling service and set `API_URL` to its HTTPS URL. Set `MINIAPP_URL` to the frontend URL where your Mini App is hosted.
+При запуске бэкенд регистрирует webhook в Telegram, поэтому `API_URL` должен указывать на доступный из интернета HTTPS-адрес. Для локальной разработки откройте доступ к бэкенду через туннель и укажите его HTTPS-адрес в `API_URL`. В `MINIAPP_URL` укажите адрес размещённого фронтенда Mini App.
 
-## Use this repository as a GitHub template
+## Как использовать репозиторий как шаблон GitHub
 
-On GitHub, open **Settings → General**, enable **Template repository**, then use the **Use this template** button to create a separate repository for each project. New repositories start from the template's current default branch and do not inherit its commit history.
+На GitHub откройте **Settings → General** и включите **Template repository**. После этого нажмите **Use this template**, чтобы создать отдельный репозиторий для нового проекта. Новый репозиторий будет содержать файлы текущей основной ветки шаблона, но не его историю коммитов.
 
-## License
+## Лицензия
 
-MIT. See [LICENSE](LICENSE).
+MIT. Текст лицензии находится в файле [LICENSE](LICENSE).
