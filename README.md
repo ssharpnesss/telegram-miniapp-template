@@ -20,7 +20,7 @@
 
 ## Локальный запуск
 
-1. Скопируйте `src/backend/.env.example` в `src/backend/.env` и укажите свои настройки. Не публикуйте файл `.env`.
+1. Скопируйте `src/backend/.env.example` в `src/backend/.env` и укажите свои настройки.
 2. Запустите бэкенд:
 
    ```powershell
@@ -45,7 +45,7 @@
 
 ## Источник
 
-При создании проекта я ориентировался на [это видео на YouTube](https://youtu.be/zgkGAkaQkNc).
+Писал шаблон я по обучалке от Fsoky [это видео на YouTube](https://youtu.be/zgkGAkaQkNc).
 
 ## Лицензия
 
