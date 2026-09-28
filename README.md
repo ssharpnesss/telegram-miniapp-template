@@ -2,6 +2,10 @@
 
 Стартовый шаблон Telegram Mini App: фронтенд на React и TypeScript, бэкенд на Python с FastAPI, aiogram и PostgreSQL.
 
+![Telegram](https://img.shields.io/badge/Telegram-Mini_App-26A5E4?logo=telegram&logoColor=white)
+![aiogram](https://img.shields.io/badge/aiogram-3.x-2CA5E0?logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.x-009688?logo=fastapi&logoColor=white)
+
 ## Что входит в шаблон
 
 - `src/client/app` — приложение на Vite, React и TypeScript.
@@ -38,6 +42,10 @@
 ## Как использовать репозиторий как шаблон GitHub
 
 На GitHub откройте **Settings → General** и включите **Template repository**. После этого нажмите **Use this template**, чтобы создать отдельный репозиторий для нового проекта. Новый репозиторий будет содержать файлы текущей основной ветки шаблона, но не его историю коммитов.
+
+## Источник
+
+При создании проекта я ориентировался на [это видео на YouTube](https://youtu.be/zgkGAkaQkNc).
 
 ## Лицензия
 
