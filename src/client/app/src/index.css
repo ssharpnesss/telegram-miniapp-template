@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -60,6 +62,22 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  padding-top: calc(
+    var(--tg-viewport-safe-area-inset-top, env(safe-area-inset-top, 0px)) +
+    var(--tg-viewport-content-safe-area-inset-top, 0px)
+  );
+  padding-bottom: calc(
+    var(--tg-viewport-safe-area-inset-bottom, env(safe-area-inset-bottom, 0px)) +
+    var(--tg-viewport-content-safe-area-inset-bottom, 0px)
+  );
+  padding-left: calc(
+    var(--tg-viewport-safe-area-inset-left, env(safe-area-inset-left, 0px)) +
+    var(--tg-viewport-content-safe-area-inset-left, 0px)
+  );
+  padding-right: calc(
+    var(--tg-viewport-safe-area-inset-right, env(safe-area-inset-right, 0px)) +
+    var(--tg-viewport-content-safe-area-inset-right, 0px)
+  );
 }
 
 body {

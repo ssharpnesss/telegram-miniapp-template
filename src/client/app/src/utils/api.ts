@@ -1,7 +1,7 @@
 import { initData } from "@tma.js/sdk";
 import axios from "axios";
 
-const BASE_URL = import.meta.env.VITE_VASE_API_URL
+const BASE_URL = import.meta.env.VITE_BASE_API_URL
 
 interface Response {
   data: any;
@@ -19,6 +19,7 @@ const request = async (
     method: method,
     headers: {
       Authorization: `tma ${initData.raw()}`,
+      "ngrok-skip-browser-warning": "true",
       Accept: "application/json",
       "Content-Type": "application/json"
     },
