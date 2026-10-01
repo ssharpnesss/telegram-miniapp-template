@@ -2,6 +2,10 @@
 
 React и TypeScript на фронтенде; FastAPI, aiogram, Tortoise ORM, Aerich и PostgreSQL на бэкенде. Пользователь авторизуется через Telegram init data, а приложение получает его данные из БД через API.
 
+![Telegram](https://img.shields.io/badge/Telegram-Mini_App-26A5E4?logo=telegram&logoColor=white)
+![aiogram](https://img.shields.io/badge/aiogram-3.x-2CA5E0?logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.x-009688?logo=fastapi&logoColor=white)
+
 ## Структура
 
 - `src/client/app` — frontend на Vite и Telegram SDK.
