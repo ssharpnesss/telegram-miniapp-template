@@ -6,7 +6,7 @@ from src.db.schemas import UserSchema
 
 class UserService(BaseService):
     async def get_me(self, auth_data: WebAppInitData) -> ServiceResponse:
-        user = await User.filter(user_id=auth_data.user.id).exists()
+        user = await User.get_or_none(user_id=auth_data.user.id)
         if not user:
             user = await User.create(
                 user_id=auth_data.user.id,

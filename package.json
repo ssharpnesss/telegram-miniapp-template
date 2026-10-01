@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@tanstack/react-query": "^5.104.0",
+    "@tma.js/sdk": "^3.3.0",
+    "axios": "^1.20.0"
+  }
+}

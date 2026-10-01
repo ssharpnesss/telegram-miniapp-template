@@ -9,4 +9,4 @@ class WebhookService(BaseService):
         update = Update.model_validate(body, context={"bot": bot})
         await dp.feed_update(bot, update)
 
-        return self.ok({"ok": True})
+        return self.success({"ok": True})

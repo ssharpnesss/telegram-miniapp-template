@@ -21,8 +21,8 @@ class Config(BaseSettings):
     POSTGRES_HOST: SecretStr
     POSTGRES_PORT: SecretStr
 
-    MINIAPP_URL: str = "https://"
-    API_URL: str = "https://"
+    MINIAPP_URL: str = "https://c443-31-56-185-188.ngrok-free.app"
+    API_URL: str = "https://f520-31-56-185-188.ngrok-free.app"
 
     APP_HOST: str = "localhost"
     APP_PORT: int = 8080
@@ -31,8 +31,8 @@ class Config(BaseSettings):
     def db_url(self) -> str:
         return (
             "asyncpg://"
-            f"{self.POSTGRES_USER.get_secret_value():{self.POSTGRES_PASSWORD.get_secret_value()}}"
-            f"@{self.POSTGRES_HOST.get_secret_value():{self.POSTGRES_PORT.get_secret_value()}}"
+            f"{self.POSTGRES_USER.get_secret_value()}:{self.POSTGRES_PASSWORD.get_secret_value()}"
+            f"@{self.POSTGRES_HOST.get_secret_value()}:{self.POSTGRES_PORT.get_secret_value()}"
             f"/{self.POSTGRES_DB.get_secret_value()}"
         )
 

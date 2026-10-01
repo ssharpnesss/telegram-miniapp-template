@@ -15,6 +15,7 @@ dependencies = [
     "pydantic-settings>=2.15.0",
     "tomlkit>=0.15.1",
     "tortoise-orm>=1.1.8",
+    "tzdata>=2026.4",
     "uvicorn>=0.54.0",
 ]
 
@@ -24,3 +25,12 @@ backend = "backend:main"
 [build-system]
 requires = ["uv_build>=0.12.13,<0.13.0"]
 build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "src"
+module-root = ""
+
+[tool.tortoise]
+tortoise_orm = "src.core.config.TORTOISE_ORM"
+location = "src/db/migrations"
+src_folder = "./."
